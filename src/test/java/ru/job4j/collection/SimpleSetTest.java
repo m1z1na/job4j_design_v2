@@ -9,7 +9,6 @@ class SimpleSetTest {
         set.add("second");
         set.add("third");
         set.add("four");
-//        assertThat(set.add("first")).isFalse();
-        assertThat(set.add("first")).isTrue();
+       assertThat(set.add("first")).isFalse();
     }
 }
