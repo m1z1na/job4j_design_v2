@@ -45,6 +45,10 @@ SELECT id, name, type_id, expired_date, price
 SELECT product.id, product.name, type_id, expired_date, price
 	FROM product.product
 	 order by price DESC LIMIT 1;
+-- 4.1 если будет несколько различных продуктов с одинаковой максимальной ценой
+SELECT product.id, product.name, type_id, expired_date, price
+	FROM product.product
+	WHERE price = (SELECT MAX(price) FROM product.product WHERE id = product.product.id);
 
 -- 5. Написать запрос, который выводит для каждого типа количество продуктов к нему принадлежащих.
 --  В виде имя_типа, количество
