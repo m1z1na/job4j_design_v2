@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.*;
 
 class CyclicIteratorTest {
 
-  /*  @Test
+    @Test
     void whenEmptyThenHasNextIsFalse() {
         CyclicIterator<Integer> iterator = new CyclicIterator<>(List.of());
         assertThat(iterator.hasNext()).isFalse();
@@ -63,5 +63,5 @@ class CyclicIteratorTest {
         assertThat(iterator.hasNext()).isTrue();
         assertThat(iterator.next()).isEqualTo(1);
         assertThat(iterator.hasNext()).isTrue();
-    }*/
+    }
 }
