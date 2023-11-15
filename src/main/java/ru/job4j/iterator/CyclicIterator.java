@@ -22,15 +22,14 @@ public class CyclicIterator<T> implements Iterator<T> {
 
     @Override
     public T next() {
-        if (hasNext()) {
-            if (index >= data.size()) {
-                index = 0;
-            }
-            int value = index;
-            index++;
-            return data.get(value);
-        } else {
+        if (!hasNext()) {
             throw new NoSuchElementException();
         }
+        if (index >= data.size()) {
+            index = 0;
+        }
+        int value = index;
+        index++;
+        return data.get(value);
     }
 }
