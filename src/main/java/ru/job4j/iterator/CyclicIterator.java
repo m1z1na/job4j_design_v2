@@ -28,8 +28,7 @@ public class CyclicIterator<T> implements Iterator<T> {
         if (index >= data.size()) {
             index = 0;
         }
-        int value = index;
-        index++;
-        return data.get(value);
+        return data.get(index++);
+
     }
 }
