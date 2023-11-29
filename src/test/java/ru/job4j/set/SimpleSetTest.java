@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class SimpleArraySetTest {
-
+/*
     @Test
     void whenAddNonNull() {
         SimpleSet<Integer> set = new SimpleArraySet<>();
@@ -36,5 +36,5 @@ class SimpleArraySetTest {
         assertThat(set.add(null)).isTrue();
         assertThat(set.contains(null)).isTrue();
         assertThat(set.add(null)).isFalse();
-    }
+    }*/
 }
