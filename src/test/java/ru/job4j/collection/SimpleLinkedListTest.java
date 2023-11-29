@@ -71,7 +71,7 @@ class SimpleLinkedListTest {
     void whenAddIterNextOneNextTwo() {
         Iterator<Integer> it = list.iterator();
         assertThat(it.next()).isEqualTo(1);
-        assertThat(it.next()).isEqualTo(2);
+         assertThat(it.next()).isEqualTo(2);
     }
 
     @Test
